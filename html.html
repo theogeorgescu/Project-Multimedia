@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contect="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Brush Script MT&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="animation">Online Photo Editing Tool</h1>
+    <div class="content">
+        <div class="input">
+            <input type="file" id="fileIN">
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <h4>Effects</h4>
+    <div>
+        <!--Brightness-->
+        <div>
+            <button class="lessBrightness">-</button>
+            <button disabled>Brightness</button>
+            <button class="addBrightness">+</button>
+        </div>
+        <!--Contrast-->
+        <div>
+            <button class="lessContrast">-</button>
+            <button disabled>Contrast</button>
+            <button class="addContrast">+</button>
+        </div>
+        <!--Saturation-->
+        <div>
+            <button class="lessSaturation">-</button>
+            <button disabled>Saturation</button>
+            <button class="addSaturation">+</button>
+        </div>
+    </div>
+
+    <h4>Filters</h4>
+    <div>
+        <button class="addSepia">Sepia</button>
+        <button class="addBW">Black & White</button>
+        <button class="addVintage">Vintage</button>
+    </div>
+
+    <h4>Download or reset</h4>
+    <div>
+        <button id="btnDownload">Download</button>
+        <button id="btnReset">Reset</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.pack.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+    </div>
+</body>
